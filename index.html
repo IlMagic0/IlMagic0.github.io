@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="it" class="dark">
 <head>
     <meta charset="UTF-8">
-    <title>Pagina Semplice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Project Highlights</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#6366f1',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <h1>Hello World!</h1>
-    <p>Hosted with Github pages.</p>
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased">
+
+    <!-- Header / Bio Minimale -->
+    <header class="max-w-4xl mx-auto px-6 pt-16 pb-10 text-center">
+        <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4">
+            Unity & Game Developer
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-6">
+            Sviluppo di meccaniche di gioco, sistemi di fisica e interazioni in Unity. Qui trovi alcuni dei progetti aziendali e moduli su cui ho lavorato.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="https://linkedin.com/in/TUO_PROFILO" target="_blank" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg font-medium transition text-sm">
+                Profilo LinkedIn
+            </a>
+            <a href="https://github.com/IIMagic0" target="_blank" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg font-medium transition text-sm">
+                GitHub Profile
+            </a>
+        </div>
+    </header>
+
+    <!-- Sezione Progetti / Post Aziendali -->
+    <main class="max-w-4xl mx-auto px-6 pb-20">
+        <h2 class="text-xl font-bold mb-6 text-slate-300 border-b border-slate-800 pb-2">
+            Professional Highlights & Credits
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Card Progetto 1 -->
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                            Aziendale / Client
+                        </span>
+                        <span class="text-xs text-slate-400">2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Nome del Progetto / Meccanica</h3>
+                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        Breve descrizione di ciò che fa il progetto o la meccanica. Specifica chiaramente il tuo ruolo (es. <i>"Realizzazione del controller del giocatore, integrazione fisica Rigidbody e ottimizzazione"</i>).
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400 font-mono">Unity • C# • Physics</span>
+                    <a href="URL_POST_LINKEDIN_AZIENDALE" target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                        Vedi Post &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card Progetto 2 -->
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                            Aziendale / Client
+                        </span>
+                        <span class="text-xs text-slate-400">2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Secondo Progetto / Sistema</h3>
+                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        Descrizione del secondo lavoro svolto per l'azienda. Evidenzia quali sistemi C# hai programmato o quali problemi tecnici hai risolto.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
+                    <span class="text-xs text-slate-400 font-mono">Unity • VR / Input</span>
+                    <a href="URL_POST_LINKEDIN_AZIENDALE" target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300">
+                        Vedi Post &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-xs text-slate-500 border-t border-slate-800">
+        © 2026 • Hosted on GitHub Pages
+    </footer>
+
 </body>
 </html>
