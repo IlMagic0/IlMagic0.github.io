@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio & Project Highlights</title>
+    <title>Portfolio Unity & Meta XR Developer</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -21,72 +21,149 @@
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased">
 
-    <!-- Header / Bio Minimale -->
-    <header class="max-w-4xl mx-auto px-6 pt-16 pb-10 text-center">
-        <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4">
-            Unity & Game Developer
-        </h1>
-        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-6">
-            Sviluppo di meccaniche di gioco, sistemi di fisica e interazioni in Unity. Qui trovi alcuni dei progetti aziendali e moduli su cui ho lavorato.
-        </p>
+    <!-- Header / Bio & Impatto Generale -->
+    <header class="max-w-5xl mx-auto px-6 pt-16 pb-10">
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-3 text-white">
+                Unity & Meta XR Developer
+            </h1>
+            <p class="text-lg text-indigo-400 font-medium mb-6">
+                Specializzato in Soluzioni Quest Native (Meta XR SDK), Simulation System Architecture & Tracking
+            </p>
+        </div>
+
+        <!-- Box Impatto Architetturale in Huvant -->
+        <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-6 text-slate-300 text-sm leading-relaxed max-w-4xl mx-auto shadow-lg mb-8">
+            <h2 class="text-base font-bold text-white mb-2 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 bg-indigo-500 rounded-full"></span>
+                Architettura App Huvant (Meta Quest Platform)
+            </h2>
+            <p>
+                Ho curato l'evoluzione dell’applicazione XR su visori <b>Meta Quest</b> per <b>Huvant</b>: da un singolo visualizzatore con menu predefinito a una piattaforma modulare e multi-applicazione basata sull'ecosistema <b>Meta XR SDK</b>. Ho progettato e sviluppato l'architettura a <b>lobby centrale</b> da cui accedere a moduli specializzati, rinnovato l'interfaccia utente, implementato l'autenticazione tramite sistema QR per il download dei modelli e realizzato i sistemi di simulazione chirurgica avanzata e tracking.
+            </p>
+        </div>
+
         <div class="flex justify-center gap-4">
-            <a href="https://linkedin.com/in/TUO_PROFILO" target="_blank" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg font-medium transition text-sm">
-                Profilo LinkedIn
-            </a>
-            <a href="https://github.com/IIMagic0" target="_blank" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg font-medium transition text-sm">
-                GitHub Profile
+            <a href="https://github.com/IIMagic0" target="_blank" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium transition text-sm flex items-center gap-2 shadow-md">
+                Profilo GitHub
             </a>
         </div>
     </header>
 
-    <!-- Sezione Progetti / Post Aziendali -->
-    <main class="max-w-4xl mx-auto px-6 pb-20">
-        <h2 class="text-xl font-bold mb-6 text-slate-300 border-b border-slate-800 pb-2">
-            Professional Highlights & Credits
+    <!-- Main Content: Card dei Progetti Huvant -->
+    <main class="max-w-5xl mx-auto px-6 pb-20">
+        <h2 class="text-xl font-bold mb-6 text-slate-200 border-b border-slate-800 pb-3 flex items-center justify-between">
+            <span>Progetti Specializzati & Moduli Quest</span>
+            <span class="text-xs font-normal text-slate-400">Powered by Huvant • Meta XR SDK</span>
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-            <!-- Card Progetto 1 -->
-            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+            <!-- Card 1: Penna Logitech & Simulazione Chirurgica -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
                 <div>
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                            Aziendale / Client
+                            Meta XR Surgical Sim
                         </span>
-                        <span class="text-xs text-slate-400">2026</span>
+                        <span class="text-xs text-slate-400">Logitech MX Ink</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Nome del Progetto / Meccanica</h3>
+                    <h3 class="text-xl font-bold mb-2 text-white">Simulazione Procedura Chirurgica</h3>
                     <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                        Breve descrizione di ciò che fa il progetto o la meccanica. Specifica chiaramente il tuo ruolo (es. <i>"Realizzazione del controller del giocatore, integrazione fisica Rigidbody e ottimizzazione"</i>).
+                        Modulo chirurgico sviluppato su stack <b>Meta XR</b> con integrazione del tracking 6DOF dello stilo <b>Logitech MX Ink</b>. Gestisce la sequenza di simulazione (incisione, aspirazione, ricucitura) sincronizzando lo stato dell'animazione a ogni stage procedurale, affiancato da un sistema di menu nativo per lo switch dinamico degli strumenti.
                     </p>
                 </div>
-                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
-                    <span class="text-xs text-slate-400 font-mono">Unity • C# • Physics</span>
-                    <a href="URL_POST_LINKEDIN_AZIENDALE" target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300">
-                        Vedi Post &rarr;
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta XR SDK</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Logitech MX Ink</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Surgical Logic</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/digitalsimulation-surgicaltraining-virtualreality-share-7483519983608807424-yjo1/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                        Vedi Post della Simulazione &rarr;
                     </a>
                 </div>
             </div>
 
-            <!-- Card Progetto 2 -->
-            <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+            <!-- Card 2: Digital Twin & ArUco Alignment -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
                 <div>
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                            Aziendale / Client
+                            Meta Passthrough & Alignment
                         </span>
-                        <span class="text-xs text-slate-400">2026</span>
+                        <span class="text-xs text-slate-400">Marker Tracking</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Secondo Progetto / Sistema</h3>
+                    <h3 class="text-xl font-bold mb-2 text-white">Sistema Digital Twin</h3>
                     <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                        Descrizione del secondo lavoro svolto per l'azienda. Evidenzia quali sistemi C# hai programmato o quali problemi tecnici hai risolto.
+                        Modulo dedicato al Digital Twin Phygital. Sfrutta il rilevamento di marker <b>ArUco</b> integrato con il Passthrough di Meta Quest per agganciare e proiettare in overlay ad alta precisione il modello 3D virtuale sopra la struttura anatomica fisica in tempo reale.
                     </p>
                 </div>
-                <div class="pt-4 border-t border-slate-700/40 flex justify-between items-center">
-                    <span class="text-xs text-slate-400 font-mono">Unity • VR / Input</span>
-                    <a href="URL_POST_LINKEDIN_AZIENDALE" target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300">
-                        Vedi Post &rarr;
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta Quest Passthrough</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">ArUco Tracking</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Phygital XR</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://www.linkedin.com/posts/huvantphantoms_theclinicalchallenge-anatomicalvariations-activity-7500500270024613888-nc7z" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                            Demo Clinical #1 &rarr;
+                        </a>
+                        <a href="https://www.linkedin.com/posts/huvantphantoms_huvantdna-phygital-surgicalreadiness-activity-7491032839119994880-CW6i" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                            Demo Phygital #2 &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Sistema Animazioni e Menu Fisico -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                            Meta Interaction SDK
+                        </span>
+                        <span class="text-xs text-slate-400">Animation System</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Sistema Animazioni & Menu Fisico</h3>
+                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        Separazione ed estrazione della logica di animazione dal visualizzatore statico legacy. Sviluppata la scena di playback dei modelli 3D animati ed un sistema di menu contestuale basato sulle interazioni fisiche native di <b>Meta Interaction SDK</b>.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta Interaction SDK</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Unity Animation</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Spatial UI</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/proceduralconfidence-surgicalreadiness-surgicalworkflow-ugcPost-7483056947475341313-yqXb/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                        Vedi Post Animazioni &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Analytics di Rotazione XR Visualizer -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                            Meta XR Tooling
+                        </span>
+                        <span class="text-xs text-slate-400">Rotation Tracking</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Tracking & Axis Locking per XR Visualizer</h3>
+                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        Estensione per l'app Meta Quest Visualizer progettata per tracciare con precisione l'orientamento e la rotazione tridimensionale impartita dall'utente, permettendo di applicare vincoli sugli assi (axis locking) per l'analisi clinica di specifiche viste anatomiche.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta XR Core</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Quaternion Constraints</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">XR Interaction</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/nephrology-patientstratification-digitalhealth-share-7518673121499934720-eE7j/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                        Vedi Post XR Analytics &rarr;
                     </a>
                 </div>
             </div>
@@ -96,7 +173,7 @@
 
     <!-- Footer -->
     <footer class="text-center py-8 text-xs text-slate-500 border-t border-slate-800">
-        © 2026 • Hosted on GitHub Pages
+        Hosted on GitHub Pages
     </footer>
 
 </body>
