@@ -21,14 +21,26 @@
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased">
 
+    <!-- Top Bar con Switch Lingua -->
+    <nav class="max-w-5xl mx-auto px-6 pt-6 flex justify-end">
+        <div class="inline-flex rounded-lg bg-slate-800 p-1 border border-slate-700" role="group">
+            <button id="btn-it" onclick="setLanguage('it')" class="px-3 py-1 text-xs font-bold rounded-md bg-indigo-600 text-white transition">
+                IT
+            </button>
+            <button id="btn-en" onclick="setLanguage('en')" class="px-3 py-1 text-xs font-bold rounded-md text-slate-400 hover:text-white transition">
+                EN
+            </button>
+        </div>
+    </nav>
+
     <!-- Header / Bio & Impatto Generale -->
-    <header class="max-w-5xl mx-auto px-6 pt-16 pb-10">
+    <header class="max-w-5xl mx-auto px-6 pt-8 pb-10">
         <div class="text-center">
             <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-3 text-white">
                 Unity & Backend Developer
             </h1>
-            <p class="text-lg text-indigo-400 font-medium mb-6">
-                Sviluppo di Sistemi Interattivi Meta XR, Architetture Software & Backend Services
+            <p data-i18n="subtitle" class="text-lg text-indigo-400 font-medium mb-6">
+                Sviluppo di Sistemi Interattivi Meta XR, Architetture Software & Servizi Backend
             </p>
         </div>
 
@@ -36,16 +48,16 @@
         <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-6 text-slate-300 text-sm leading-relaxed max-w-4xl mx-auto shadow-lg mb-8">
             <h2 class="text-base font-bold text-white mb-2 flex items-center gap-2">
                 <span class="w-2.5 h-2.5 bg-indigo-500 rounded-full"></span>
-                Architettura App Huvant (Meta Quest Platform)
+                <span data-i18n="huvant-title">Architettura App Huvant (Piattaforma Meta Quest)</span>
             </h2>
-            <p>
+            <p data-i18n="huvant-desc">
                 Ho curato l'evoluzione dell’applicazione XR su visori <b>Meta Quest</b> per <b>Huvant</b>: da un singolo visualizzatore con menu predefinito a una piattaforma modulare e multi-applicazione basata sull'ecosistema <b>Meta XR SDK</b>. Ho progettato e sviluppato l'architettura a <b>lobby centrale</b> da cui accedere a moduli specializzati, rinnovato l'interfaccia utente, implementato l'autenticazione tramite sistema QR per il download dei modelli e realizzato i sistemi di simulazione chirurgica avanzata e tracking.
             </p>
         </div>
 
         <div class="flex justify-center gap-4">
             <a href="https://github.com/IIMagic0" target="_blank" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium transition text-sm flex items-center gap-2 shadow-md">
-                Profilo GitHub
+                <span data-i18n="github-btn">Profilo GitHub</span>
             </a>
         </div>
     </header>
@@ -56,8 +68,8 @@
         <!-- SEZIONE 1: UNITY & META XR -->
         <section>
             <h2 class="text-xl font-bold mb-6 text-slate-200 border-b border-slate-800 pb-3 flex items-center justify-between">
-                <span>Progetti Specializzati & Moduli Quest</span>
-                <span class="text-xs font-normal text-slate-400">Powered by Huvant • Meta XR SDK</span>
+                <span data-i18n="sec-xr-title">Progetti Specializzati & Moduli Quest</span>
+                <span class="text-xs font-normal text-slate-400">Huvant &bull; Meta XR SDK</span>
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -66,13 +78,13 @@
                 <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                                Meta XR Surgical Sim
+                            <span data-i18n="c1-badge" class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                                Simulazione Chirurgica XR
                             </span>
                             <span class="text-xs text-slate-400">Logitech MX Ink</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Simulazione Procedura Chirurgica</h3>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        <h3 data-i18n="c1-title" class="text-xl font-bold mb-2 text-white">Simulazione Procedura Chirurgica</h3>
+                        <p data-i18n="c1-desc" class="text-slate-300 text-sm mb-4 leading-relaxed">
                             Modulo chirurgico sviluppato su stack <b>Meta XR</b> con integrazione del tracking dello stilo <b>Logitech MX Ink</b>. Gestisce la sequenza di simulazione (incisione, aspirazione, ricucitura) sincronizzando lo stato dell'animazione a ogni stage procedurale, affiancato da un sistema di menu nativo per lo switch dinamico degli strumenti.
                         </p>
                     </div>
@@ -83,7 +95,7 @@
                             <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Surgical Logic</span>
                         </div>
                         <a href="https://www.linkedin.com/posts/digitalsimulation-surgicaltraining-virtualreality-share-7483519983608807424-yjo1/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                            Vedi Post della Simulazione &rarr;
+                            <span data-i18n="c1-link">Vedi Post della Simulazione &rarr;</span>
                         </a>
                     </div>
                 </div>
@@ -92,13 +104,13 @@
                 <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
                     <div>
                         <div class="flex justify-between items-start mb-3">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                                Meta Passthrough & Alignment
+                            <span data-i18n="c2-badge" class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                                Allineamento AR / Phygital
                             </span>
-                            <span class="text-xs text-slate-400">Marker Tracking</span>
+                            <span data-i18n="c2-tag" class="text-xs text-slate-400">Tracciamento Marker</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Sistema Digital Twin</h3>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        <h3 data-i18n="c2-title" class="text-xl font-bold mb-2 text-white">Sistema Digital Twin</h3>
+                        <p data-i18n="c2-desc" class="text-slate-300 text-sm mb-4 leading-relaxed">
                             Modulo dedicato al Digital Twin Phygital. Sfrutta il rilevamento di marker <b>ArUco</b> integrato con il Passthrough di Meta Quest per agganciare e proiettare in overlay ad alta precisione il modello 3D virtuale sopra la struttura anatomica fisica in tempo reale.
                         </p>
                     </div>
@@ -110,10 +122,10 @@
                         </div>
                         <div class="grid grid-cols-2 gap-2">
                             <a href="https://www.linkedin.com/posts/huvantphantoms_theclinicalchallenge-anatomicalvariations-activity-7500500270024613888-nc7z" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                                Demo Clinical #1 &rarr;
+                                <span data-i18n="c2-link1">Demo Clinica #1 &rarr;</span>
                             </a>
                             <a href="https://www.linkedin.com/posts/huvantphantoms_huvantdna-phygital-surgicalreadiness-activity-7491032839119994880-CW6i" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                                Demo Phygital #2 &rarr;
+                                <span data-i18n="c2-link2">Demo Phygital #2 &rarr;</span>
                             </a>
                         </div>
                     </div>
@@ -126,11 +138,11 @@
                             <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
                                 Meta Interaction SDK
                             </span>
-                            <span class="text-xs text-slate-400">Animation System</span>
+                            <span data-i18n="c3-tag" class="text-xs text-slate-400">Sistema Animazioni</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Sistema Animazioni & Menu Fisico</h3>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                            Separazione ed estrazione della logica di animazione dal visualizzatore statico legacy. Sviluppata la scena di playback dei modelli 3D animati ed un sistema di menu contestuale basato sulle interazioni fisiche native di <b>Meta Interaction SDK</b>.
+                        <h3 data-i18n="c3-title" class="text-xl font-bold mb-2 text-white">Sistema Animazioni & Menu Fisico</h3>
+                        <p data-i18n="c3-desc" class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Separazione ed estrazione della logica di animazione dal visualizzatore statico preesistente. Sviluppata la scena di playback dei modelli 3D animati ed un sistema di menu contestuale basato sulle interazioni fisiche native di <b>Meta Interaction SDK</b>.
                         </p>
                     </div>
                     <div>
@@ -140,7 +152,7 @@
                             <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Spatial UI</span>
                         </div>
                         <a href="https://www.linkedin.com/posts/proceduralconfidence-surgicalreadiness-surgicalworkflow-ugcPost-7483056947475341313-yqXb/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                            Vedi Post Animazioni &rarr;
+                            <span data-i18n="c3-link">Vedi Post Animazioni &rarr;</span>
                         </a>
                     </div>
                 </div>
@@ -152,10 +164,10 @@
                             <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
                                 Meta XR Tooling
                             </span>
-                            <span class="text-xs text-slate-400">Rotation Tracking</span>
+                            <span data-i18n="c4-tag" class="text-xs text-slate-400">Tracciamento Rotazione</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Tracking & Axis Locking per XR Visualizer</h3>
-                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        <h3 data-i18n="c4-title" class="text-xl font-bold mb-2 text-white">Tracking & Blocco Assi per XR Visualizer</h3>
+                        <p data-i18n="c4-desc" class="text-slate-300 text-sm mb-4 leading-relaxed">
                             Estensione per l'app Meta Quest Visualizer progettata per tracciare con precisione l'orientamento e la rotazione tridimensionale impartita dall'utente, permettendo di applicare vincoli sugli assi (axis locking) per l'analisi clinica di specifiche viste anatomiche.
                         </p>
                     </div>
@@ -166,7 +178,7 @@
                             <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">XR Interaction</span>
                         </div>
                         <a href="https://www.linkedin.com/posts/nephrology-patientstratification-digitalhealth-share-7518673121499934720-eE7j/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                            Vedi Post XR Analytics &rarr;
+                            <span data-i18n="c4-link">Vedi Post Analisi XR &rarr;</span>
                         </a>
                     </div>
                 </div>
@@ -177,29 +189,29 @@
         <!-- SEZIONE 2: BACKEND & DISTRIBUTED SYSTEMS -->
         <section>
             <h2 class="text-xl font-bold mb-6 text-slate-200 border-b border-slate-800 pb-3 flex items-center justify-between">
-                <span>Backend & Microservices Architecture</span>
-                <span class="text-xs font-normal text-slate-400">Java 21 • Spring Cloud • Python AI • Blender</span>
+                <span data-i18n="sec-be-title">Architettura Backend & Microservizi</span>
+                <span class="text-xs font-normal text-slate-400">Java 21 &bull; Spring Cloud &bull; Python AI &bull; Blender</span>
             </h2>
 
             <!-- Card Unica Full-Width per l'architettura a microservizi -->
             <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 hover:border-emerald-500/50 transition">
                 <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
-                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 border border-emerald-800/50 px-2.5 py-1 rounded-md">
-                        Distributed Microservices Pipeline
+                    <span data-i18n="be-badge" class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 border border-emerald-800/50 px-2.5 py-1 rounded-md">
+                        Pipeline Distribuita a Microservizi
                     </span>
                     <span class="text-xs text-slate-400">Java 21 &bull; Spring Boot 3.5 &bull; Netflix Eureka</span>
                 </div>
 
-                <h3 class="text-xl font-bold mb-3 text-white">Automated 3D Vehicle Rendering & Computer Vision Pipeline</h3>
+                <h3 data-i18n="be-title" class="text-xl font-bold mb-3 text-white">Pipeline Automatizzata di Computer Vision & Rendering 3D</h3>
                 
-                <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                    Architettura distribuita composta da <b>8 microservizi Spring Boot</b> orchestrati tramite <b>Netflix Eureka Service Discovery</b> e Load Balancing lato client. Il sistema automatizza il processing di immagini fotografiche di veicoli fino al rendering 3D fotorealistico finale:
+                <p data-i18n="be-desc" class="text-slate-300 text-sm mb-4 leading-relaxed">
+                    Architettura distribuita composta da <b>8 microservizi Spring Boot</b> orchestrati tramite <b>Netflix Eureka Service Discovery</b> e Load Balancing lato client. Il sistema automatizza l'elaborazione di immagini fotografiche di veicoli fino al rendering 3D fotorealistico finale:
                 </p>
 
                 <ul class="text-slate-300 text-xs space-y-2 mb-5 list-disc list-inside bg-slate-900/60 p-4 rounded-lg border border-slate-700/50">
-                    <li><b>Orchestration & Cloud Storage:</b> Un <i>Client Orchestrator</i> coordina le chiamate REST multipart tra i servizi e sincronizza i file con <b>Amazon S3</b> tramite un <i>Bucket Service</i> dedicato.</li>
-                    <li><b>Computer Vision & AI Segmentation:</b> Integrazione di worker Python per rimozione dello sfondo (<code>rembg</code>), segmentazione semantica dei finestrini tramite modello custom <b>YOLOv8</b> e calcolo dell'inclinazione del veicolo con <b>OpenCV</b>.</li>
-                    <li><b>Dynamic 3D Headless Rendering:</b> Routing condizionale verso due nodi di rendering (<i>Flat</i> vs <i>Inclined</i>) che avviano istanze headless di <b>Blender 4.3 (Cycles GPU/CUDA)</b> per generare ombre, maschere alpha e il render 3D finale.</li>
+                    <li data-i18n="be-li1"><b>Orchestrazione & Cloud Storage:</b> Un servizio orchestratore coordina le chiamate REST multipart tra i nodi e sincronizza i file con <b>Amazon S3</b> tramite un microservizio dedicato.</li>
+                    <li data-i18n="be-li2"><b>Computer Vision & Segmentazione AI:</b> Integrazione di worker Python per la rimozione dello sfondo (<code>rembg</code>), segmentazione semantica dei finestrini tramite modello <b>YOLOv8</b> e calcolo dell'inclinazione del veicolo con <b>OpenCV</b>.</li>
+                    <li data-i18n="be-li3"><b>Rendering 3D Dinamico Headless:</b> Instradamento condizionale verso due nodi di rendering (<i>piano</i> o <i>inclinato</i>) che avviano istanze headless di <b>Blender 4.3 (Cycles GPU/CUDA)</b> per generare ombre, maschere alpha e il render 3D finale.</li>
                 </ul>
 
                 <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-700/40">
@@ -212,7 +224,7 @@
                     </div>
 
                     <a href="URL_DELLA_TUA_REPO_BACKEND" target="_blank" class="px-4 py-2 bg-emerald-600/20 hover:bg-emerald-600/40 border border-emerald-500/40 text-emerald-300 rounded-lg text-xs font-semibold transition">
-                        Esplora Repository su GitHub &rarr;
+                        <span data-i18n="be-link">Esplora Repository su GitHub &rarr;</span>
                     </a>
                 </div>
             </div>
@@ -222,8 +234,110 @@
 
     <!-- Footer -->
     <footer class="text-center py-8 text-xs text-slate-500 border-t border-slate-800">
-        Hosted on GitHub Pages
+        <span data-i18n="footer">Ospitato su GitHub Pages</span>
     </footer>
+
+    <!-- Script di Traduzione Istantanea IT / EN -->
+    <script>
+        const translations = {
+            it: {
+                "subtitle": "Sviluppo di Sistemi Interattivi Meta XR, Architetture Software & Servizi Backend",
+                "huvant-title": "Architettura App Huvant (Piattaforma Meta Quest)",
+                "huvant-desc": "Ho curato l'evoluzione dell’applicazione XR su visori <b>Meta Quest</b> per <b>Huvant</b>: da un singolo visualizzatore con menu predefinito a una piattaforma modulare e multi-applicazione basata sull'ecosistema <b>Meta XR SDK</b>. Ho progettato e sviluppato l'architettura a <b>lobby centrale</b> da cui accedere a moduli specializzati, rinnovato l'interfaccia utente, implementato l'autenticazione tramite sistema QR per il download dei modelli e realizzato i sistemi di simulazione chirurgica avanzata e tracking.",
+                "github-btn": "Profilo GitHub",
+                "sec-xr-title": "Progetti Specializzati & Moduli Quest",
+                "c1-badge": "Simulazione Chirurgica XR",
+                "c1-title": "Simulazione Procedura Chirurgica",
+                "c1-desc": "Modulo chirurgico sviluppato su stack <b>Meta XR</b> con integrazione del tracking dello stilo <b>Logitech MX Ink</b>. Gestisce la sequenza di simulazione (incisione, aspirazione, ricucitura) sincronizzando lo stato dell'animazione a ogni stage procedurale, affiancato da un sistema di menu nativo per lo switch dinamico degli strumenti.",
+                "c1-link": "Vedi Post della Simulazione &rarr;",
+                "c2-badge": "Allineamento AR / Phygital",
+                "c2-tag": "Tracciamento Marker",
+                "c2-title": "Sistema Digital Twin",
+                "c2-desc": "Modulo dedicato al Digital Twin Phygital. Sfrutta il rilevamento di marker <b>ArUco</b> integrato con il Passthrough di Meta Quest per agganciare e proiettare in overlay ad alta precisione il modello 3D virtuale sopra la struttura anatomica fisica in tempo reale.",
+                "c2-link1": "Demo Clinica #1 &rarr;",
+                "c2-link2": "Demo Phygital #2 &rarr;",
+                "c3-tag": "Sistema Animazioni",
+                "c3-title": "Sistema Animazioni & Menu Fisico",
+                "c3-desc": "Separazione ed estrazione della logica di animazione dal visualizzatore statico preesistente. Sviluppata la scena di playback dei modelli 3D animati ed un sistema di menu contestuale basato sulle interazioni fisiche native di <b>Meta Interaction SDK</b>.",
+                "c3-link": "Vedi Post Animazioni &rarr;",
+                "c4-tag": "Tracciamento Rotazione",
+                "c4-title": "Tracking & Blocco Assi per XR Visualizer",
+                "c4-desc": "Estensione per l'app Meta Quest Visualizer progettata per tracciare con precisione l'orientamento e la rotazione tridimensionale impartita dall'utente, permettendo di applicare vincoli sugli assi (axis locking) per l'analisi clinica di specifiche viste anatomiche.",
+                "c4-link": "Vedi Post Analisi XR &rarr;",
+                "sec-be-title": "Architettura Backend & Microservizi",
+                "be-badge": "Pipeline Distribuita a Microservizi",
+                "be-title": "Pipeline Automatizzata di Computer Vision & Rendering 3D",
+                "be-desc": "Architettura distribuita composta da <b>8 microservizi Spring Boot</b> orchestrati tramite <b>Netflix Eureka Service Discovery</b> e Load Balancing lato client. Il sistema automatizza l'elaborazione di immagini fotografiche di veicoli fino al rendering 3D fotorealistico finale:",
+                "be-li1": "<b>Orchestrazione & Cloud Storage:</b> Un servizio orchestratore coordina le chiamate REST multipart tra i nodi e sincronizza i file con <b>Amazon S3</b> tramite un microservizio dedicato.",
+                "be-li2": "<b>Computer Vision & Segmentazione AI:</b> Integrazione di worker Python per la rimozione dello sfondo (<code>rembg</code>), segmentazione semantica dei finestrini tramite modello <b>YOLOv8</b> e calcolo dell'inclinazione del veicolo con <b>OpenCV</b>.",
+                "be-li3": "<b>Rendering 3D Dinamico Headless:</b> Instradamento condizionale verso due nodi di rendering (<i>piano</i> o <i>inclinato</i>) che avviano istanze headless di <b>Blender 4.3 (Cycles GPU/CUDA)</b> per generare ombre, maschere alpha e il render 3D finale.",
+                "be-link": "Esplora Repository su GitHub &rarr;",
+                "footer": "Ospitato su GitHub Pages"
+            },
+            en: {
+                "subtitle": "Meta XR Interactive Systems, Software Architecture & Backend Services",
+                "huvant-title": "Huvant App Architecture (Meta Quest Platform)",
+                "huvant-desc": "Led the evolution of the <b>Meta Quest</b> XR application at <b>Huvant</b>, transforming a standalone static model viewer with a default menu into a modular, multi-app platform built on the <b>Meta XR SDK</b>. Designed and developed a <b>central lobby architecture</b> giving access to specialized modules, overhauled the UI, implemented QR-based authentication for dynamic model downloads, and built advanced surgical simulation and tracking systems.",
+                "github-btn": "GitHub Profile",
+                "sec-xr-title": "Specialized Projects & Quest Modules",
+                "c1-badge": "Meta XR Surgical Sim",
+                "c1-title": "Surgical Procedure Simulation",
+                "c1-desc": "Surgical module built on the <b>Meta XR</b> stack integrating <b>Logitech MX Ink</b> stylus tracking. Manages the procedural workflow (incision, suction, suturing) by synchronizing animation states across surgical stages, paired with a native menu system for dynamic tool switching.",
+                "c1-link": "View Simulation Post &rarr;",
+                "c2-badge": "AR / Phygital Alignment",
+                "c2-tag": "Marker Tracking",
+                "c2-title": "Digital Twin System",
+                "c2-desc": "Dedicated Phygital Digital Twin module. Leverages <b>ArUco</b> marker detection combined with Meta Quest Passthrough to anchor and project a high-precision 3D virtual overlay directly onto physical anatomical phantoms in real time.",
+                "c2-link1": "Clinical Demo #1 &rarr;",
+                "c2-link2": "Phygital Demo #2 &rarr;",
+                "c3-tag": "Animation System",
+                "c3-title": "Animation System & Physical Menu",
+                "c3-desc": "Decoupled and extracted animation logic from the legacy static viewer. Built the animated 3D playback scene along with a contextual menu driven by native physical interactions via <b>Meta Interaction SDK</b>.",
+                "c3-link": "View Animation Post &rarr;",
+                "c4-tag": "Rotation Tracking",
+                "c4-title": "Rotation Tracking & Axis Locking for XR Visualizer",
+                "c4-desc": "Extension for the Meta Quest Visualizer app engineered to accurately track user-driven 3D rotation and orientation, enabling axis-locking constraints for clinical measurements and specific anatomical views.",
+                "c4-link": "View XR Analytics Post &rarr;",
+                "sec-be-title": "Backend & Microservices Architecture",
+                "be-badge": "Distributed Microservices Pipeline",
+                "be-title": "Automated Computer Vision & 3D Rendering Pipeline",
+                "be-desc": "Distributed architecture comprising <b>8 Spring Boot microservices</b> orchestrated via <b>Netflix Eureka Service Discovery</b> and client-side load balancing. Automates end-to-end vehicle image processing into photorealistic 3D renders:",
+                "be-li1": "<b>Orchestration & Cloud Storage:</b> An orchestrator service coordinates multipart REST calls across nodes and syncs assets with <b>Amazon S3</b> through a dedicated bucket microservice.",
+                "be-li2": "<b>Computer Vision & AI Segmentation:</b> Integrates Python workers for background removal (<code>rembg</code>), semantic window segmentation using a custom <b>YOLOv8</b> model, and vehicle tilt calculation with <b>OpenCV</b>.",
+                "be-li3": "<b>Dynamic Headless 3D Rendering:</b> Conditional routing to two rendering nodes (<i>flat</i> vs <i>inclined</i>) running headless instances of <b>Blender 4.3 (Cycles GPU/CUDA)</b> to generate shadows, alpha masks, and the final 3D composite.",
+                "be-link": "Explore Repository on GitHub &rarr;",
+                "footer": "Hosted on GitHub Pages"
+            }
+        };
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            localStorage.setItem('portfolio-lang', lang);
+
+            // Aggiorna testi
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Aggiorna stile bottoni
+            const btnIt = document.getElementById('btn-it');
+            const btnEn = document.getElementById('btn-en');
+            if (lang === 'it') {
+                btnIt.className = "px-3 py-1 text-xs font-bold rounded-md bg-indigo-600 text-white transition";
+                btnEn.className = "px-3 py-1 text-xs font-bold rounded-md text-slate-400 hover:text-white transition";
+            } else {
+                btnEn.className = "px-3 py-1 text-xs font-bold rounded-md bg-indigo-600 text-white transition";
+                btnIt.className = "px-3 py-1 text-xs font-bold rounded-md text-slate-400 hover:text-white transition";
+            }
+        }
+
+        // Imposta la lingua salvata o default 'it'
+        const savedLang = localStorage.getItem('portfolio-lang') || 'it';
+        setLanguage(savedLang);
+    </script>
 
 </body>
 </html>
