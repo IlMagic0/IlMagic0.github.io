@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Unity & Meta XR Developer</title>
+    <title>Portfolio Unity & Backend Developer</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,10 +25,10 @@
     <header class="max-w-5xl mx-auto px-6 pt-16 pb-10">
         <div class="text-center">
             <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-3 text-white">
-                Unity & Meta XR Developer
+                Unity & Backend Developer
             </h1>
             <p class="text-lg text-indigo-400 font-medium mb-6">
-                Specializzato in Soluzioni Quest Native (Meta XR SDK), Simulation System Architecture & Tracking
+                Sviluppo di Sistemi Interattivi Meta XR, Architetture Software & Backend Services
             </p>
         </div>
 
@@ -50,125 +50,174 @@
         </div>
     </header>
 
-    <!-- Main Content: Card dei Progetti Huvant -->
-    <main class="max-w-5xl mx-auto px-6 pb-20">
-        <h2 class="text-xl font-bold mb-6 text-slate-200 border-b border-slate-800 pb-3 flex items-center justify-between">
-            <span>Progetti Specializzati & Moduli Quest</span>
-            <span class="text-xs font-normal text-slate-400">Powered by Huvant • Meta XR SDK</span>
-        </h2>
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 pb-20 space-y-16">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- SEZIONE 1: UNITY & META XR -->
+        <section>
+            <h2 class="text-xl font-bold mb-6 text-slate-200 border-b border-slate-800 pb-3 flex items-center justify-between">
+                <span>Progetti Specializzati & Moduli Quest</span>
+                <span class="text-xs font-normal text-slate-400">Powered by Huvant • Meta XR SDK</span>
+            </h2>
 
-            <!-- Card 1: Penna Logitech & Simulazione Chirurgica -->
-            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
-                <div>
-                    <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                            Meta XR Surgical Sim
-                        </span>
-                        <span class="text-xs text-slate-400">Logitech MX Ink</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Simulazione Procedura Chirurgica</h3>
-                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                        Modulo chirurgico sviluppato su stack <b>Meta XR</b> con integrazione del tracking 6DOF dello stilo <b>Logitech MX Ink</b>. Gestisce la sequenza di simulazione (incisione, aspirazione, ricucitura) sincronizzando lo stato dell'animazione a ogni stage procedurale, affiancato da un sistema di menu nativo per lo switch dinamico degli strumenti.
-                    </p>
-                </div>
-                <div>
-                    <div class="flex flex-wrap gap-1.5 mb-4">
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta XR SDK</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Logitech MX Ink</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Surgical Logic</span>
-                    </div>
-                    <a href="https://www.linkedin.com/posts/digitalsimulation-surgicaltraining-virtualreality-share-7483519983608807424-yjo1/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                        Vedi Post della Simulazione &rarr;
-                    </a>
-                </div>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-            <!-- Card 2: Digital Twin & ArUco Alignment -->
-            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
-                <div>
-                    <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                            Meta Passthrough & Alignment
-                        </span>
-                        <span class="text-xs text-slate-400">Marker Tracking</span>
+                <!-- Card 1: Penna Logitech & Simulazione Chirurgica -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                                Meta XR Surgical Sim
+                            </span>
+                            <span class="text-xs text-slate-400">Logitech MX Ink</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Simulazione Procedura Chirurgica</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Modulo chirurgico sviluppato su stack <b>Meta XR</b> con integrazione del tracking dello stilo <b>Logitech MX Ink</b>. Gestisce la sequenza di simulazione (incisione, aspirazione, ricucitura) sincronizzando lo stato dell'animazione a ogni stage procedurale, affiancato da un sistema di menu nativo per lo switch dinamico degli strumenti.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Sistema Digital Twin</h3>
-                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                        Modulo dedicato al Digital Twin Phygital. Sfrutta il rilevamento di marker <b>ArUco</b> integrato con il Passthrough di Meta Quest per agganciare e proiettare in overlay ad alta precisione il modello 3D virtuale sopra la struttura anatomica fisica in tempo reale.
-                    </p>
-                </div>
-                <div>
-                    <div class="flex flex-wrap gap-1.5 mb-4">
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta Quest Passthrough</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">ArUco Tracking</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Phygital XR</span>
-                    </div>
-                    <div class="grid grid-cols-2 gap-2">
-                        <a href="https://www.linkedin.com/posts/huvantphantoms_theclinicalchallenge-anatomicalvariations-activity-7500500270024613888-nc7z" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                            Demo Clinical #1 &rarr;
-                        </a>
-                        <a href="https://www.linkedin.com/posts/huvantphantoms_huvantdna-phygital-surgicalreadiness-activity-7491032839119994880-CW6i" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                            Demo Phygital #2 &rarr;
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta XR SDK</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Logitech MX Ink</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Surgical Logic</span>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/digitalsimulation-surgicaltraining-virtualreality-share-7483519983608807424-yjo1/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                            Vedi Post della Simulazione &rarr;
                         </a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 3: Sistema Animazioni e Menu Fisico -->
-            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
-                <div>
-                    <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                            Meta Interaction SDK
-                        </span>
-                        <span class="text-xs text-slate-400">Animation System</span>
+                <!-- Card 2: Digital Twin & ArUco Alignment -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                                Meta Passthrough & Alignment
+                            </span>
+                            <span class="text-xs text-slate-400">Marker Tracking</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Sistema Digital Twin</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Modulo dedicato al Digital Twin Phygital. Sfrutta il rilevamento di marker <b>ArUco</b> integrato con il Passthrough di Meta Quest per agganciare e proiettare in overlay ad alta precisione il modello 3D virtuale sopra la struttura anatomica fisica in tempo reale.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Sistema Animazioni & Menu Fisico</h3>
-                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                        Separazione ed estrazione della logica di animazione dal visualizzatore statico legacy. Sviluppata la scena di playback dei modelli 3D animati ed un sistema di menu contestuale basato sulle interazioni fisiche native di <b>Meta Interaction SDK</b>.
-                    </p>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta Quest Passthrough</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">ArUco Tracking</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Phygital XR</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="https://www.linkedin.com/posts/huvantphantoms_theclinicalchallenge-anatomicalvariations-activity-7500500270024613888-nc7z" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                                Demo Clinical #1 &rarr;
+                            </a>
+                            <a href="https://www.linkedin.com/posts/huvantphantoms_huvantdna-phygital-surgicalreadiness-activity-7491032839119994880-CW6i" target="_blank" class="text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                                Demo Phygital #2 &rarr;
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div class="flex flex-wrap gap-1.5 mb-4">
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta Interaction SDK</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Unity Animation</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Spatial UI</span>
+
+                <!-- Card 3: Sistema Animazioni e Menu Fisico -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                                Meta Interaction SDK
+                            </span>
+                            <span class="text-xs text-slate-400">Animation System</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Sistema Animazioni & Menu Fisico</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Separazione ed estrazione della logica di animazione dal visualizzatore statico legacy. Sviluppata la scena di playback dei modelli 3D animati ed un sistema di menu contestuale basato sulle interazioni fisiche native di <b>Meta Interaction SDK</b>.
+                        </p>
                     </div>
-                    <a href="https://www.linkedin.com/posts/proceduralconfidence-surgicalreadiness-surgicalworkflow-ugcPost-7483056947475341313-yqXb/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                        Vedi Post Animazioni &rarr;
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta Interaction SDK</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Unity Animation</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Spatial UI</span>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/proceduralconfidence-surgicalreadiness-surgicalworkflow-ugcPost-7483056947475341313-yqXb/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                            Vedi Post Animazioni &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Analytics di Rotazione XR Visualizer -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
+                                Meta XR Tooling
+                            </span>
+                            <span class="text-xs text-slate-400">Rotation Tracking</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Tracking & Axis Locking per XR Visualizer</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                            Estensione per l'app Meta Quest Visualizer progettata per tracciare con precisione l'orientamento e la rotazione tridimensionale impartita dall'utente, permettendo di applicare vincoli sugli assi (axis locking) per l'analisi clinica di specifiche viste anatomiche.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta XR Core</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Quaternion Constraints</span>
+                            <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">XR Interaction</span>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/nephrology-patientstratification-digitalhealth-share-7518673121499934720-eE7j/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
+                            Vedi Post XR Analytics &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEZIONE 2: BACKEND & DISTRIBUTED SYSTEMS -->
+        <section>
+            <h2 class="text-xl font-bold mb-6 text-slate-200 border-b border-slate-800 pb-3 flex items-center justify-between">
+                <span>Backend & Microservices Architecture</span>
+                <span class="text-xs font-normal text-slate-400">Java 21 • Spring Cloud • Python AI • Blender</span>
+            </h2>
+
+            <!-- Card Unica Full-Width per l'architettura a microservizi -->
+            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 hover:border-emerald-500/50 transition">
+                <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 border border-emerald-800/50 px-2.5 py-1 rounded-md">
+                        Distributed Microservices Pipeline
+                    </span>
+                    <span class="text-xs text-slate-400">Java 21 &bull; Spring Boot 3.5 &bull; Netflix Eureka</span>
+                </div>
+
+                <h3 class="text-xl font-bold mb-3 text-white">Automated 3D Vehicle Rendering & Computer Vision Pipeline</h3>
+                
+                <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                    Architettura distribuita composta da <b>8 microservizi Spring Boot</b> orchestrati tramite <b>Netflix Eureka Service Discovery</b> e Load Balancing lato client. Il sistema automatizza il processing di immagini fotografiche di veicoli fino al rendering 3D fotorealistico finale:
+                </p>
+
+                <ul class="text-slate-300 text-xs space-y-2 mb-5 list-disc list-inside bg-slate-900/60 p-4 rounded-lg border border-slate-700/50">
+                    <li><b>Orchestration & Cloud Storage:</b> Un <i>Client Orchestrator</i> coordina le chiamate REST multipart tra i servizi e sincronizza i file con <b>Amazon S3</b> tramite un <i>Bucket Service</i> dedicato.</li>
+                    <li><b>Computer Vision & AI Segmentation:</b> Integrazione di worker Python per rimozione dello sfondo (<code>rembg</code>), segmentazione semantica dei finestrini tramite modello custom <b>YOLOv8</b> e calcolo dell'inclinazione del veicolo con <b>OpenCV</b>.</li>
+                    <li><b>Dynamic 3D Headless Rendering:</b> Routing condizionale verso due nodi di rendering (<i>Flat</i> vs <i>Inclined</i>) che avviano istanze headless di <b>Blender 4.3 (Cycles GPU/CUDA)</b> per generare ombre, maschere alpha e il render 3D finale.</li>
+                </ul>
+
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-700/40">
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Spring Boot / Cloud</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Netflix Eureka</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">AWS S3 SDK</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">YOLOv8 & OpenCV</span>
+                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Blender Headless API</span>
+                    </div>
+
+                    <a href="URL_DELLA_TUA_REPO_BACKEND" target="_blank" class="px-4 py-2 bg-emerald-600/20 hover:bg-emerald-600/40 border border-emerald-500/40 text-emerald-300 rounded-lg text-xs font-semibold transition">
+                        Esplora Repository su GitHub &rarr;
                     </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Card 4: Analytics di Rotazione XR Visualizer -->
-            <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition">
-                <div>
-                    <div class="flex justify-between items-start mb-3">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-950/80 border border-indigo-800/50 px-2.5 py-1 rounded-md">
-                            Meta XR Tooling
-                        </span>
-                        <span class="text-xs text-slate-400">Rotation Tracking</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Tracking & Axis Locking per XR Visualizer</h3>
-                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
-                        Estensione per l'app Meta Quest Visualizer progettata per tracciare con precisione l'orientamento e la rotazione tridimensionale impartita dall'utente, permettendo di applicare vincoli sugli assi (axis locking) per l'analisi clinica di specifiche viste anatomiche.
-                    </p>
-                </div>
-                <div>
-                    <div class="flex flex-wrap gap-1.5 mb-4">
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Meta XR Core</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">Quaternion Constraints</span>
-                        <span class="text-[11px] bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-slate-400">XR Interaction</span>
-                    </div>
-                    <a href="https://www.linkedin.com/posts/nephrology-patientstratification-digitalhealth-share-7518673121499934720-eE7j/" target="_blank" class="w-full text-center py-2 bg-slate-700/50 hover:bg-indigo-600/80 border border-slate-600/50 hover:border-indigo-500 text-white rounded-lg text-xs font-medium transition block">
-                        Vedi Post XR Analytics &rarr;
-                    </a>
-                </div>
-            </div>
-
-        </div>
     </main>
 
     <!-- Footer -->
